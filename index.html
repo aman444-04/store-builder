@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Store Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Store Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Create Your Store</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Build your online store in minutes with AI</h2>
+        <p>Start your e-commerce journey today! AI helps you create product descriptions and customize your store easily.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AI Store Builder. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<section class="ai-generator">
+    <h2>Generate Product Description</h2>
+    <input type="text" id="product-input" placeholder="Enter product name" />
+    <button id="generate-description-button">Generate Description</button>
+    <p id="description-output"></p>
+</section>
+
+<script src="app.js"></script>
+<section class="add-product">
+    <h2>Add Your Product</h2>
+    <form id="product-form">
+        <input type="text" id="product-name" placeholder="Product Name" required />
+        <textarea id="product-description" placeholder="Product Description" required></textarea>
+        <input type="number" id="product-price" placeholder="Price" required />
+        <button type="submit">Add Product</button>
+    </form>
+    <div id="product-list"></div>
+</section>
